@@ -2,7 +2,7 @@
 *.aux
 *.log
 *.out
-
+R/fawn.tex
 
 
 
@@ -31,3 +31,6 @@
 *.knit.md
 
 
+# pdf and html
+*.pdf
+*.html

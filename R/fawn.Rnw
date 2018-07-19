@@ -32,9 +32,7 @@
 \begin{document}
 
 {\large
-Supplement 2: Gibbs sampler, data, and code for fitting the model \\
-
-\vspace{5mm}
+Fit the model described in the paper: \\
 Estimating recruitment from capture-recapture data by modeling spatio-temporal variation in birth and age-specific survival rates \\
 }
 
@@ -48,12 +46,6 @@ $^2$ Virginia Tech, Department of Fish and Wildlife Conservation \\
 $^3$ Florida Fish and Wildlife Conservation Commission \\
 \vspace{20mm}
 
-\clearpage
-\section{{\tt R} function implementing the Gibbs sampler}
-%{\footnotesize
-%\verbatiminput{fawn-mcmc.R}
-%}
-
 
 \normalsize
 
@@ -63,7 +55,7 @@ $^3$ Florida Fish and Wildlife Conservation Commission \\
 %\verbatiminput{fawn.R}
 %}
 Load the data and source the R code with the Gibbs sampler above.
-<<>>=
+<<data>>=
 load("../data/fawnData.gzip")
 source("fawn-mcmc-dlife.R")
 @
@@ -98,8 +90,8 @@ str(fm1)
 
 The traceplots and posterior densities can be viewed with the
 \verb+coda+ package.
-<<>>=
-library(coda)
+<<coda>>=
+library(coda) ## You will need to install this first
 mc1 <- mcmc(fm1$samples)
 #plot(mc1[,1:4]) # First 4 parameters only
 plot(mc1) # First 4 parameters only
