@@ -7,7 +7,7 @@ The data are in the `data/fawnData.gzip` file, which can be loaded into `R` usin
 
 ```
 setwd("CHANGE_ME/mee-fawn-data/data") ## Change the "CHANGE_ME" part of the path
-load("fawnData.gzip") 
+load("fawnData.gzip")
 ```
 
 
@@ -17,7 +17,7 @@ To run the `R` code, you can issue these commands:
 ```
 setwd("CHANGE_ME/mee-fawn-data/R") ## Change the "CHANGE_ME" part of the path
 install.packages("coda")
-source("fawn.R") 
+source("fawn.R")                   ## Could take a few minutes
 ```
 
 ## Documentation
@@ -25,10 +25,11 @@ For an overview of the data and code, you can create a PDF using these `R` comma
 
 ```
 install.packages("knitr")
-library(knitr) 
-knit("fawn.Rnw")
+library(knitr)
+setwd("CHANGE_ME/mee-fawn-data/R") ## Change the "CHANGE_ME" part of the path
+knit("fawn.Rnw")                   ## Could take a few minutes
 tools::texi2pdf("fawn.tex", clean=TRUE)
-system("open fawn.pdf") # If this doesn't open the PDF, you can do it manually
+system("open fawn.pdf") ## If this doesn't open the PDF, open it manually
 ```
 
 

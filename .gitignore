@@ -6,11 +6,13 @@ R/fawn.tex
 
 
 
-# R stuff
+# R and knitr stuff
 
 *.Rhistory
 *.RData
 *.gzip
+*/cache/*
+
 
 
 # pdf and html
