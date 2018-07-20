@@ -32,3 +32,7 @@ system("open fawn.pdf") # If this doesn't open the PDF, you can do it manually
 ```
 
 
+## DOI
+[![DOI](https://zenodo.org/badge/141598623.svg)](https://zenodo.org/badge/latestdoi/141598623)
+
+
