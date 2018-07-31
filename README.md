@@ -1,5 +1,5 @@
 # mee-fawn-data
-Data and code for Methods in Ecology and Evolution paper (to appear) about modeling fawn survival and recruitment.
+Data and code for [Methods in Ecology and Evolution paper](https://doi.org/10.1111/2041-210X.13068) (*In press*) about modeling fawn survival and recruitment.
 
 
 ## Data
